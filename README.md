@@ -1,2 +1,2 @@
 # ogami
-new repo
+new repository
