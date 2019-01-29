@@ -1,0 +1,314 @@
+.wrap-content{}
+.content{
+    margin: 0 50px 0 50px;
+}
+
+/*-------------------------  HEADER  -------------------------*/
+#header{}
+#nav-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border-bottom: 1px solid; */
+    flex-wrap: wrap;
+    top: 0;
+    height: 70px;
+}
+.navtop-left{
+    margin: 23px 0 13px 0;
+    /* align-content: center; */
+}
+.navtop-right{
+    display: flex;
+    margin: 23px 0 17px 0;
+}
+.navtop-contact{
+    display: flex;
+    /* margin-left: 5px; */
+    /* align-items: center; */
+    height: 80%;
+}
+.contact-email{
+    display: flex;
+    border-right: 1px solid #FFE4C4;
+    padding-right: 55px;
+}
+.margin-2{
+    margin-right: 20px;
+}
+.contact-phone{
+    display: flex;
+    padding-left: 40px;
+}
+.contact-phone-text{
+    color: #88c74a;
+}
+.icon-phone{
+    margin-right: 10px
+}
+.navtop-social{
+    display: flex;
+    border-right: 1px solid #FFE4C4;
+    width: 40%;
+}
+.navtop-language{
+    /* padding-left: 20px; */
+    padding: 0 20px 0 22px;
+    border-right: 1px solid #FFE4C4;
+    width: 40%;
+    display: flex;
+}
+.navtop-language ul{
+    list-style-type: none;
+    text-align: center;
+}
+.navtop-language a{
+    text-decoration: none;
+     color: #fff;
+    display: block;
+}
+.navtop-language-down{
+    margin: 0 2px 0 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.sub-menu-3{
+    display: none;
+    position: absolute;
+}
+/* .sub-menu-3 li{
+    text-align: left;
+    display: flex;
+    margin-left: -40px;
+} */
+.navtop-language-down:hover .sub-menu-2{
+    display: block;
+}
+
+.icon-language{
+}
+.navtop-login{
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 20%;
+    text-align: right;
+}
+#logo{
+    display: flex;
+    height: 120px;
+    padding: 20px 0 20px 0;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+
+.logo-logo{
+    width: 8%;
+}
+.logo-cateSearch{
+    display: flex;
+    border: 1px solid #FFE4C4;
+    /* padding: 23px 0 25px 0; */
+    align-items: center;
+    width: 591px;
+    margin: 14px 0 14px 0;
+}
+
+.logo-categories{
+    border-right: 1px solid #FFE4C4;
+    padding-right: 20px;
+    margin-left: 23px;
+    cursor: pointer;
+    /* display: flex; */
+    /* align-content: center; */
+    /* text-align: center; */
+    /* font-size: 16px; */
+    /* color: #252525; */
+    /* font-family: "Cera Pro"; */
+    /* font-weight: 500; */
+    /* text-align: center; */
+    width: 200px;
+}
+.sub-menu-2{
+    position: fixed;
+    width: 13%;
+    margin-top: 26px;
+    display: none;
+}
+.logo-categories:hover .sub-menu-2{
+    display: block;
+}
+.sub-menu-2 li{
+    /* text-align: center; */
+    display: flex;
+    margin-left: -56px;
+    height: 42px;
+    /* align-content: center; */
+    padding-top: 12px;
+}
+.logo-categories a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    /* font-size: 16px; */
+}
+.logo-categories ul{
+    list-style-type: none;
+    background-color: #ffffff;
+}
+.icon-categories{
+    width: 28%;
+    text-align: center;
+}
+
+.logo-search{
+    margin-left: 20px;
+    width: 403px;
+}
+
+/* .wrap-logo-menu{
+
+} */
+.logo-menu{
+    width: 770px;
+    padding-top: 28px;
+}
+.logo-menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+.logo-menu li{
+    display: inline-block;
+    width: 120px;
+    /* background: antiquewhite; */
+    margin-right: 12px;
+    /* margin-top: 10px; */
+    /* height: 40px; */
+}
+.logo-menu a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+}
+.sub-menu{
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+}
+.logo-menu li:hover .sub-menu{
+    display: block;
+}
+.logo-menu li{
+    position: relative;
+}
+.sub-menu li{
+    margin-left: -40px;
+    height: 40px;
+}
+.logo-icon{
+    display: flex;
+    padding-top: 28px;
+}
+.logo-icon-love{
+    position: relative;
+    margin-right: 20px;
+}
+.logo-icon-cart{
+    position: relative;
+    margin-right: 20px;
+}
+.float-icon{
+    position: absolute;
+    background-color: #88c74a;
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    text-align: center;
+    height: 18px;
+    font-size: 12px;
+    top: -4px;
+    left: 21px;
+}
+.icon-header{
+    font-size: 30px;
+    /* font-style: oblique; */
+    font-weight: bold;
+}
+.icon-down{
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.icon-down-2{
+    margin-left: 20px;
+}
+.icon-search{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    width: 52px;
+    height: 51px;
+    align-items: center;
+    /* text-align: center; */
+    padding-left: 17px;
+    font-size: 19px;
+    margin-top: 3px;
+}
+.input-search{
+    border: none;
+    margin-bottom: 15px;
+    /* height: 54%; */
+}
+.form-search{/* text-align: center; *//* margin-bottom: 6px; */}
+#categories{}
+
+#slide{
+    /* border: 1px solid; */
+    height: 680px;
+    background-color: #fff2d0;
+    /* position: relative; */
+}
+.slide-caption{
+    position: absolute;
+    margin: 233px 0 20px 200px;
+}
+.slide-caption-title{
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #88c74a;
+    font-family: "Cera Pro";
+    font-weight: bold;
+}
+.slide-caption-name{
+    font-size: 48px;
+    color: #252525;
+    font-family: "Cera Pro";
+    font-weight: bold;
+    text-align: left;
+}
+.slide-caption-description{
+    width: 488px;
+    height: 47px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #636363;
+    font-family: "Cera Pro";
+}
+.slide-caption-button{
+    width: 140px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #fff2d0;
+    border: 2px solid #88c74a;
+
+    font-size: 14px;
+    color: #88c74a;
+    font-family: "Cera Pro";
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/*-------------------------  END HEADER  -------------------------*/
