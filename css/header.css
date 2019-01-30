@@ -52,37 +52,54 @@
     width: 40%;
 }
 .navtop-language{
-    /* padding-left: 20px; */
-    padding: 0 20px 0 22px;
+    padding: 0px 20px 0 24px;
     border-right: 1px solid #FFE4C4;
-    width: 40%;
+    width: 165px;
     display: flex;
 }
 .navtop-language ul{
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.navtop-language li{
+    display: inline-block;
+    position: relative;
+    /* width: 128px; */
+    line-height: 25px;
+}
+.navtop-language:hover .sub-menu-3{
+    display: block;
 }
 .navtop-language a{
     text-decoration: none;
-     color: #fff;
+    color: black;
     display: block;
 }
-.navtop-language-down{
-    margin: 0 2px 0 10px;
-    width: 100px;
-    cursor: pointer;
+.navtop-language-icon-down{
+    margin-left: 4px;
+}
+.navtop-language-icon-nation{
+    margin-right: 9px;
 }
 .sub-menu-3{
     display: none;
     position: absolute;
+    z-index: 1;
+    background-color:white;
+    /* padding-top: 2px; */
 }
-/* .sub-menu-3 li{
-    text-align: left;
-    display: flex;
-    margin-left: -40px;
-} */
-.navtop-language-down:hover .sub-menu-2{
-    display: block;
+.sub-menu-3 li{
+    /* text-align: center; */
+    /* display: flex; */
+    /* margin-left: -40px; */
+    width: 102px;
+    line-height: 37px;
+    margin-top: 7px;
+}
+.sub-menu-3 a:hover{
+    color: #88c74a;
 }
 
 .icon-language{
@@ -99,24 +116,26 @@
     padding: 20px 0 20px 0;
     justify-content: space-between;
     /* border: 1px solid; */
+    margin-top: -17px;
 }
 
 .logo-logo{
     width: 8%;
+    margin-top: 20px;
 }
 .logo-cateSearch{
     display: flex;
     border: 1px solid #FFE4C4;
     /* padding: 23px 0 25px 0; */
     align-items: center;
-    width: 591px;
-    margin: 14px 0 14px 0;
+    width: 615px;
+    margin: 15px 0 13px 0;
 }
 
 .logo-categories{
     border-right: 1px solid #FFE4C4;
-    padding-right: 20px;
-    margin-left: 23px;
+    /* padding-right: 20px; */
+    /* margin-left: 23px; */
     cursor: pointer;
     /* display: flex; */
     /* align-content: center; */
@@ -126,24 +145,27 @@
     /* font-family: "Cera Pro"; */
     /* font-weight: 500; */
     /* text-align: center; */
-    width: 200px;
+    width: 216px;
 }
-.sub-menu-2{
-    position: fixed;
-    width: 13%;
-    margin-top: 26px;
-    display: none;
+.logo-categories-text{
+    
+margin-left: 30px;
 }
-.logo-categories:hover .sub-menu-2{
-    display: block;
+.logo-categories ul{
+    list-style-type: none;
+    background-color: #ffffff;
+    /* padding-top: 11px; */
+    margin: 1px 0 1px 0px;
+    padding: 0;
 }
-.sub-menu-2 li{
-    /* text-align: center; */
-    display: flex;
-    margin-left: -56px;
-    height: 42px;
-    /* align-content: center; */
-    padding-top: 12px;
+.logo-categories li{
+    display: inline-block;
+    width: 215px;
+    /* height: 46px; */
+    line-height: 50px;
+    /* margin-left: -5px; */
+    position: relative;
+    /* background-color: aqua; */
 }
 .logo-categories a{
     text-decoration: none;
@@ -151,18 +173,42 @@
     color: black;
     /* font-size: 16px; */
 }
-.logo-categories ul{
-    list-style-type: none;
-    background-color: #ffffff;
+.logo-categories a:hover{
+    color: #88c74a;
 }
+
+.logo-categories:hover .sub-menu-2{
+    display: block;
+}
+.sub-menu-2{
+    position: absolute;
+    /* width: 13%; */
+    /* margin-top: 26px; */
+    display: none;
+    /* padding-top: 14px; */
+    padding-top: 13px;
+    z-index: 1;
+}
+.sub-menu-2 li{
+    /* text-align: center; */
+    display: flex;
+    /* margin-left: -40px; */
+    /* height: 50px; */
+    /* align-content: center; */
+    padding-top: 1px;
+    /* line-height: 50px; */
+    width: 275px;
+    line-height: 47px;
+}
+
 .icon-categories{
-    width: 28%;
+    width: 25%;
     text-align: center;
 }
 
 .logo-search{
-    margin-left: 20px;
-    width: 403px;
+    margin-left: 9px;
+    /* width: 103%; */
 }
 
 /* .wrap-logo-menu{
@@ -170,19 +216,21 @@
 } */
 .logo-menu{
     width: 770px;
-    padding-top: 28px;
+    padding-top: 18px;
 }
 .logo-menu ul{
     list-style-type: none;
     text-align: center;
+    margin: 0;
 }
 .logo-menu li{
+    position: relative;
     display: inline-block;
     width: 120px;
-    /* background: antiquewhite; */
+    background: white;
     margin-right: 12px;
-    /* margin-top: 10px; */
-    /* height: 40px; */
+    height: 45px;
+    line-height: 45px;
 }
 .logo-menu a{
     text-decoration: none;
@@ -190,21 +238,20 @@
     color: black;
     text-align: center;
 }
+.logo-menu a:hover{
+    color: #88c74a;
+}
 .sub-menu{
     display: none;
-    margin-top: 10px;
     position: absolute;
 }
 .logo-menu li:hover .sub-menu{
     display: block;
 }
-.logo-menu li{
-    position: relative;
-}
 .sub-menu li{
     margin-left: -40px;
-    height: 40px;
 }
+  
 .logo-icon{
     display: flex;
     padding-top: 28px;
@@ -251,13 +298,16 @@
     /* text-align: center; */
     padding-left: 17px;
     font-size: 19px;
-    margin-top: 3px;
+    margin-top: 4px;
     border-radius: 3px;
+}
+.form-search-input{
+    
 }
 .input-search{
     border: none;
-    margin-bottom: 15px;
-    /* height: 54%; */
+    margin-bottom: 14px;
+    margin-left: 23px;
 }
 .form-search{/* text-align: center; *//* margin-bottom: 6px; */}
 #categories{}
@@ -313,3 +363,58 @@
 }
 
 /*-------------------------  END HEADER  -------------------------*/
+
+/*-------------------------  BANNER  -------------------------*/
+#banner{
+    margin: 20px 0 40px 0;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.banner-item{
+    flex-basis: 570px;
+    height: 236px;
+    /* flex-grow: 1; */
+    /* margin-right: 20px; */
+}
+.banner-item:nth-of-type(1){
+    background-color: #e0ffd9;
+}
+.banner-item:nth-of-type(2){
+    background-color: #ffdedc;
+}
+.banner-item:nth-of-type(3){
+    background-color: #def1ff;
+}
+.banner-content{
+    position: absolute;
+    margin: 50px 0 0 306px;
+    font-size: 30px;
+    line-height: 20px;
+    color: #252525;
+/* font-family: "Cera Pro"; */
+/* font-weight: bold; */
+}
+.banner-content-1{}
+.banner-content-2{}
+.banner-content-3{}
+/*-------------------------  END BANNER  -------------------------*/
+
+/*-------------------------  PRODUCT  -------------------------*/
+#product{
+    margin-bottom: 40px
+}
+.product-title{
+    font-size: 44px;
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+}
+.product-content{}
+.product-menubar{}
+.product-content li{}
+.product-content a{}
+.product-product{}
+.product-product-item{}
+/*-------------------------  END PRODUCT  -------------------------*/
