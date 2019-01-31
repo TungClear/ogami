@@ -170,62 +170,347 @@
             <div id="product">
                 <div class="product-title">Featured Product</div>
                 <div class="product-content">
-                    <ul class="nav nav-tabs product-menubar" id="featuredProducts" role="tablist">
+                    <ul class="nav nav-tabs justify-content-center product-menubar" id="product-menubar" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="oranges-tab" data-toggle="tab" href="#oranges" role="tab"
-                                aria-controls="oranges" aria-selected="true">Oranges</a>
+                            <a class="nav-link active" id="product-oranges-tab" data-toggle="tab" href="#product-oranges"
+                                role="tab" aria-controls="product-oranges" aria-selected="true">Oranges</a>
                         </li>
-                        <li class="nav-item product-menubar-item">
-                            <a class="nav-link product-menubar-item-a" id="freshMeat-tab" data-toggle="tab" href="#freshMeat" role="tab"
-                                aria-controls="freshMeat" aria-selected="false">Fresh Meat</a>
+                        <li class="nav-item">
+                            <a class="nav-link" id="product-freshMeat-tab" data-toggle="tab" href="#product-freshMeat"
+                                role="tab" aria-controls="product-freshMeat" aria-selected="false">Fresh Meat</a>
                         </li>
-                        <li class="nav-item product-menubar-item">
-                            <a class="nav-link product-menubar-item-a" id="vegetables-tab" data-toggle="tab" href="#vegetables" role="tab"
-                                aria-controls="vegetables" aria-selected="false">Vegetables</a>
+                        <li class="nav-item">
+                            <a class="nav-link" id="product-vegetables-tab" data-toggle="tab" href="#product-vegetables"
+                                role="tab" aria-controls="product-vegetables" aria-selected="false">Vegetables</a>
                         </li>
-                        <li class="nav-item product-menubar-item">
-                            <a class="nav-link product-menubar-item-a" id="fastfood-tab" data-toggle="tab" href="#fastfood" role="tab"
-                                aria-controls="fastfood" aria-selected="false">Fastfood</a>
+                        <li class="nav-item">
+                            <a class="nav-link" id="product-fastfood-tab" data-toggle="tab" href="#product-fastfood"
+                                role="tab" aria-controls="product-fastfood" aria-selected="false">Fastfood</a>
                         </li>
-                        <li class="nav-item product-menubar-item">
-                            <a class="nav-link product-menubar-item-a" id="other-tab" data-toggle="tab" href="#other" role="tab"
-                                aria-controls="other" aria-selected="false">Other</a>
+                        <li class="nav-item">
+                            <a class="nav-link" id="product-other-tab" data-toggle="tab" href="#product-other" role="tab"
+                                aria-controls="product-other" aria-selected="false">Other</a>
                         </li>
                     </ul>
-                    <div class="tab-content product-product" id="featuredProductsContent">
-                        <div class="tab-pane fade show product-product-item active" id="oranges" role="tabpanel" aria-labelledby="oranges-tab">Oranges...</div>
-                        <div class="tab-pane fade product-product-item" id="freshMeat" role="tabpanel" aria-labelledby="freshMeat-tab">freshMeat...</div>
-                        <div class="tab-pane fade product-product-item" id="vegetables" role="tabpanel" aria-labelledby="vegetables-tab">vegetables...</div>
-                        <div class="tab-pane fade product-product-item" id="fastfood" role="tabpanel" aria-labelledby="fastfood-tab">fastfood...</div>
-                        <div class="tab-pane fade product-product-item" id="other" role="tabpanel" aria-labelledby="other-tab">other...</div>
+                    <div class="tab-content" id="productContent">
+                        <div class="tab-pane fade show active" id="product-oranges" role="tabpanel" aria-labelledby="product-oranges-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="product-freshMeat" role="tabpanel" aria-labelledby="product-freshMeat-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="product-vegetables" role="tabpanel" aria-labelledby="product-vegetables-tab">
+                            <div class="product-product">vegetables...</div>
+                        </div>
+                        <div class="tab-pane fade" id="product-fastfood" role="tabpanel" aria-labelledby="product-fastfood-tab">
+                            <div class="product-product">fastfood...</div>
+                        </div>
+                        <div class="tab-pane fade" id="product-other" role="tabpanel" aria-labelledby="product-other-tab">
+                            <div class="product-product">other...</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="benefit">
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
-                <div class="benefit-item"></div>
+                <div class="benefit-item">
+                    <div class="benefit-item-content">
+                        <span class="benefit-item-content-icon"><i class="fas fa-shuttle-van"></i></span>
+                        <p class="benefit-item-content-name">FREE SHIPPING</p>
+                        <p class="benefit-item-content-description">For all order over 99$</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item-content">
+                        <span class="benefit-item-content-icon"><i class="fas fa-clock"></i></span>
+                        <p class="benefit-item-content-name">delivery on time</p>
+                        <p class="benefit-item-content-description">If good have problems</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item-content">
+                        <span class="benefit-item-content-icon"><i class="far fa-credit-card"></i></span>
+                        <p class="benefit-item-content-name">secure payment</p>
+                        <p class="benefit-item-content-description">100% secure payment</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item-content">
+                        <span class="benefit-item-content-icon"><i class="fas fa-user-tie"></i></span>
+                        <p class="benefit-item-content-name">24/7 support</p>
+                        <p class="benefit-item-content-description">Delicated support</p>
+                    </div>
+                </div>
             </div>
             <div id="dealOfTheWeek">
+                <div class="dealOfTheWeek-content">deal of the week</div>
             </div>
             <div id="bestSeller">
-                <div class="bestSeller-title"></div>
-                <div class="bestSeller-item"></div>
-                <div class="bestSeller-item"></div>
-                <div class="bestSeller-item"></div>
-                <div class="bestSeller-item"></div>
-                <div class="bestSeller-item"></div>
-                <div class="bestSeller-item"></div>
+                <div class="bestSeller-title">
+                    <div class="bestSeller-title-name">Best Seller</div>
+                </div>
+                <div class="bestSeller-content">
+                    <ul class="nav nav-tabs justify-content-end product-menubar" id="bestSeller-menubar" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="bestSeller-oranges-tab" data-toggle="tab" href="#bestSeller-oranges"
+                                role="tab" aria-controls="bestSeller-oranges" aria-selected="true">Oranges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bestSeller-freshMeat-tab" data-toggle="tab" href="#bestSeller-freshMeat"
+                                role="tab" aria-controls="bestSeller-freshMeat" aria-selected="false">Fresh Meat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bestSeller-vegetables-tab" data-toggle="tab" href="#bestSeller-vegetables"
+                                role="tab" aria-controls="bestSeller-vegetables" aria-selected="false">Vegetables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bestSeller-fastfood-tab" data-toggle="tab" href="#bestSeller-fastfood"
+                                role="tab" aria-controls="bestSeller-fastfood" aria-selected="false">Fastfood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bestSeller-other-tab" data-toggle="tab" href="#bestSeller-other"
+                                role="tab" aria-controls="bestSeller-other" aria-selected="false">Other</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="bestSellerProductsContent">
+                        <div class="tab-pane fade show active" id="bestSeller-oranges" role="tabpanel" aria-labelledby="bestSeller-oranges-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bestSeller-freshMeat" role="tabpanel" aria-labelledby="bestSeller-freshMeat-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bestSeller-vegetables" role="tabpanel" aria-labelledby="bestSeller-vegetables-tab">
+                            <div class="product-product">vegetables...</div>
+                        </div>
+                        <div class="tab-pane fade" id="bestSeller-fastfood" role="tabpanel" aria-labelledby="bestSeller-fastfood-tab">
+                            <div class="product-product">fastfood...</div>
+                        </div>
+                        <div class="tab-pane fade" id="bestSeller-other" role="tabpanel" aria-labelledby="bestSeller-other-tab">
+                            <div class="product-product">other...</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="featuredProducts">
-                <div class="featuredProducts-title"></div>
-                <div class="featuredProducts-item"></div>
-                <div class="featuredProducts-item"></div>
-                <div class="featuredProducts-item"></div>
-                <div class="featuredProducts-item"></div>
-                <div class="featuredProducts-item"></div>
-                <div class="featuredProducts-item"></div>
+                <div class="bestSeller-title">
+                    <div class="bestSeller-title-name">Featured Products</div>
+                </div>
+                <div class="bestSeller-content">
+                    <ul class="nav nav-tabs justify-content-end product-menubar" id="featuredProducts-menubar" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="featuredProducts-oranges-tab" data-toggle="tab" href="#featuredProducts-oranges"
+                                role="tab" aria-controls="featuredProducts-oranges" aria-selected="true">Oranges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="featuredProducts-freshMeat-tab" data-toggle="tab" href="#featuredProducts-freshMeat"
+                                role="tab" aria-controls="featuredProducts-freshMeat" aria-selected="false">Fresh Meat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="featuredProducts-vegetables-tab" data-toggle="tab" href="#featuredProducts-vegetables"
+                                role="tab" aria-controls="featuredProducts-vegetables" aria-selected="false">Vegetables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="featuredProducts-fastfood-tab" data-toggle="tab" href="#featuredProducts-fastfood"
+                                role="tab" aria-controls="featuredProducts-fastfood" aria-selected="false">Fastfood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="featuredProducts-other-tab" data-toggle="tab" href="#featuredProducts-other"
+                                role="tab" aria-controls="featuredProducts-other" aria-selected="false">Other</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="featuredProductsContent">
+                        <div class="tab-pane fade show active" id="featuredProducts-oranges" role="tabpanel"
+                            aria-labelledby="featuredProducts-oranges-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="featuredProducts-freshMeat" role="tabpanel" aria-labelledby="featuredProducts-freshMeat-tab">
+                            <div class="product-product">
+                                <div class="product-product-item">
+                                    <div class="product-product-item-image">
+                                        <img src="./images/green-pineapple.jpg">
+                                    </div>
+                                    <div class="product-product-item-caption">
+                                        <p class="product-item-caption-category">Oranges</p>
+                                        <p class="product-item-caption-name">Green Pineapple</p>
+                                        <div class="product-item-caption-price">
+                                            <p class="product-item-caption-price-sale">$33.00</p>
+                                            <p class="product-item-caption-price-real">$45.00</p>
+                                        </div>
+                                        <div class="wrap-product-product-item-caption-hover">
+                                            <div class="product-product-item-caption-hover">
+                                                <div class="product-product-item-caption-hover-like"><i class="pe-7s-like"></i></div>
+                                                <div class="product-product-item-caption-hover-cart"><i class="pe-7s-cart"></i></div>
+                                                <div class="product-product-item-caption-hover-share"><i class="pe-7s-shuffle"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                                <div class="product-product-item"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="featuredProducts-vegetables" role="tabpanel" aria-labelledby="featuredProducts-vegetables-tab">
+                            <div class="product-product">vegetables...</div>
+                        </div>
+                        <div class="tab-pane fade" id="featuredProducts-fastfood" role="tabpanel" aria-labelledby="featuredProducts-fastfood-tab">
+                            <div class="product-product">fastfood...</div>
+                        </div>
+                        <div class="tab-pane fade" id="featuredProducts-other" role="tabpanel" aria-labelledby="featuredProducts-other-tab">
+                            <div class="product-product">other...</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="banner2">
                 <div class="banner2-item"></div>
@@ -249,10 +534,9 @@
             </div>
             <div id="footer"></div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

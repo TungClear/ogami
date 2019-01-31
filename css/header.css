@@ -2,7 +2,6 @@
 .content{
     margin: 0 50px 0 50px;
 }
-
 /*-------------------------  HEADER  -------------------------*/
 #header{}
 #nav-top{
@@ -362,6 +361,13 @@ margin-left: 30px;
     cursor: pointer;
 }
 
+@media only screen and (max-width:1279px){
+    .content{margin: 0 25px 0 25px;}
+    .contact-email{padding-right: 30px}
+    .contact-phone{padding-left: 30px}
+    .navtop-language{width: 140px;padding: 0px 0 0 20px;}
+    
+}
 /*-------------------------  END HEADER  -------------------------*/
 
 /*-------------------------  BANNER  -------------------------*/
@@ -410,11 +416,195 @@ margin-left: 30px;
     color: #252525;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 10px;
 }
 .product-content{}
-.product-menubar{}
-.product-content li{}
-.product-content a{}
-.product-product{}
-.product-product-item{}
+.product-menubar{border-bottom: 1px solid #ebebeb;}
+.product-menubar li{
+}
+.product-menubar a{
+    /* border: none;
+    font-size: 22px;
+    color: #b2b2b2;
+    font-family: "Cera Pro";
+    font-weight: 500;
+    text-align: center; */
+    border: none !important;
+    font-size: 22px;
+    color: #b2b2b2;
+    text-align: center;
+}
+.product-menubar a.active{
+    color: #88c74a !important;
+    border-bottom: 3px solid #88c74a !important;
+}
+.product-menubar-item-a{
+
+}
+.product-product{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-product-item{
+    /* width: 300px; */
+    height: 300px;
+    border: 1px solid;
+    flex-basis: 300px;
+}
+.product-product-item-image{
+    height: 76%;
+    border: 1px solid;
+}
+.product-product-item-image img{
+    width: 296px;
+}
+.product-product-item-caption{
+    height: 24%;
+    border: 1px solid;
+    text-align: center;
+    /* padding-top: 9px; */
+}
+.product-item-caption-category{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #88c74a;
+    font-size: 12px;
+}
+.product-item-caption-name{
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.product-item-caption-price-sale{
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.product-item-caption-price{display: flex;justify-content: center;}
+.product-item-caption-price-real{
+    margin: 1px 0 0 5px;
+    color: #b2b2b2;
+    text-decoration: line-through;
+}
+.wrap-product-product-item-caption-hover{
+    display: none;
+}
+.product-product-item-caption-hover{
+    display: flex;
+    position: absolute;
+    width: 296px;
+    height: 89px;
+    border: 1px solid;
+    z-index: 1;
+    justify-content: center;
+    padding-top: 21px;
+    font-size: 27px;
+    background-color: white;
+}
+.product-product-item-caption:hover .wrap-product-product-item-caption-hover{
+    display: block;
+}
+.product-product-item-caption-hover-like, .product-product-item-caption-hover-cart, .product-product-item-caption-hover-share{
+    margin-right: 10px;
+    padding-top: 3px;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #eaeff4;
+    color: #88c74a;
+    cursor: pointer;
+}
+.product-product-item-caption-hover-share{
+    margin-right: 0;
+}
+
+.product-product-item-caption-hover-like:hover, .product-product-item-caption-hover-cart:hover, .product-product-item-caption-hover-share:hover{
+    background-color: #88c74a;
+    color: white;
+}
 /*-------------------------  END PRODUCT  -------------------------*/
+
+/*-------------------------  BENEFIT -------------------------*/
+#benefit{
+    height: 150px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    display: flex;
+}
+.benefit-item{
+    height: inherit;
+    flex-grow: 1;
+    text-align: center;
+}
+.benefit-item-content{
+    margin-top: 30px;
+}
+.benefit-item-content-icon{
+    width: 42px;
+    height: 30px;
+    border-radius: 4px;
+    color: #87c749;
+    font-size: 24px;
+}
+.benefit-item-content-name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+    text-transform: uppercase;
+}
+.benefit-item-content-description{
+    margin: 0;
+}
+/*-------------------------  END BENEFIT  -------------------------*/
+
+/*-------------------------  DEAL OF WEEK  -------------------------*/
+#dealOfTheWeek{
+    height: 510px;
+    background-color: #ebfee9;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.dealOfTheWeek-content{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+/*-------------------------  END DEAL OF WEEK  -------------------------*/
+
+/*-------------------------  BEST SELLER  -------------------------*/
+#bestSeller{
+    height: 368px;
+    border: 1px solid;
+    margin-bottom: 35px;
+}
+.bestSeller-title{
+    display: flex;
+    justify-content: space-between;
+}
+.bestSeller-title-name{
+    font-size: 44px;
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+}
+.bestSeller-content{
+    margin: -51px 0 0 0;
+}
+.bestSeller-menubar{
+    border-bottom: 1px solid #ebebeb;
+}
+.bestSeller-item{}
+/*-------------------------  END BEST SELLER  -------------------------*/
+
+/*-------------------------  FEATURED PRODUCT  -------------------------*/
+#featuredProducts{
+    height: 368px;
+    border: 1px solid;
+    margin-bottom: 35px;
+}
+/*-------------------------  END FEATURED PRODUCT  -------------------------*/
