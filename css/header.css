@@ -51,9 +51,9 @@
     width: 40%;
 }
 .navtop-language{
-    padding: 0px 20px 0 24px;
+    padding: 0px 0 0 20px;
     border-right: 1px solid #FFE4C4;
-    width: 165px;
+    width: 135px;
     display: flex;
 }
 .navtop-language ul{
@@ -109,6 +109,9 @@
     width: 20%;
     text-align: right;
 }
+#wrap-logo{
+    /* margin-bottom: 20px; */
+}
 #logo{
     display: flex;
     height: 120px;
@@ -116,6 +119,12 @@
     justify-content: space-between;
     /* border: 1px solid; */
     margin-top: -17px;
+}
+#logo-2{
+    display: none;
+    height: 52px;
+    /* border: 1px solid; */
+    margin-bottom: 20px;
 }
 
 .logo-logo{
@@ -125,10 +134,11 @@
 .logo-cateSearch{
     display: flex;
     border: 1px solid #FFE4C4;
-    /* padding: 23px 0 25px 0; */
+    padding: 0px 0 0 0;
     align-items: center;
     width: 615px;
-    margin: 15px 0 13px 0;
+    margin: 0px 0 0px 0;
+    height: 52px;
 }
 
 .logo-categories{
@@ -144,7 +154,7 @@
     /* font-family: "Cera Pro"; */
     /* font-weight: 500; */
     /* text-align: center; */
-    width: 216px;
+    width: 195px;
 }
 .logo-categories-text{
     
@@ -225,9 +235,9 @@ margin-left: 30px;
 .logo-menu li{
     position: relative;
     display: inline-block;
-    width: 120px;
+    width: 115px;
     background: white;
-    margin-right: 12px;
+    /* margin-right: 12px; */
     height: 45px;
     line-height: 45px;
 }
@@ -243,6 +253,7 @@ margin-left: 30px;
 .sub-menu{
     display: none;
     position: absolute;
+    z-index: 1;
 }
 .logo-menu li:hover .sub-menu{
     display: block;
@@ -294,7 +305,8 @@ margin-left: 30px;
     width: 52px;
     height: 51px;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
+    /* align-content: center; */
     padding-left: 17px;
     font-size: 19px;
     margin-top: 4px;
@@ -307,6 +319,7 @@ margin-left: 30px;
     border: none;
     margin-bottom: 14px;
     margin-left: 23px;
+    width: 329px;
 }
 .form-search{/* text-align: center; *//* margin-bottom: 6px; */}
 #categories{}
@@ -360,14 +373,87 @@ margin-left: 30px;
     margin-top: 25px;
     cursor: pointer;
 }
+.wrap-logo-cateSearch{
+    padding: 15px 0 0 0;
+}
+.logo-department{
+    width: 28%;
+    background-color: #88c74a;
+}
+.wrap-logo-cateSearch-2{
+    display: none;
+}
 
-@media only screen and (max-width:1279px){
-    .content{margin: 0 25px 0 25px;}
+@media only screen and (max-width:1799px){
+    .logo-categories-text{margin-left:15px;}
+    .icon-down-2 {margin-left: 10px;}
+    .logo-categories{width: 155px;}
+    .logo-cateSearch{width: 575px;}
+}
+@media only screen and (max-width:1752px){
+    .input-search{width: 244px;}
+    .logo-cateSearch{width: 490px;}
+    .logo-menu{width: 635px;}
+    .logo-menu li{width: 103px;}
+}
+@media only screen and (max-width:1659px){
+    .input-search{width: 244px;}
+    .wrap-logo-cateSearch{margin-left: 20px;}
+    .contact-email{padding-right: 20px;}
+    .contact-phone{padding-left: 20px;}
+}
+@media only screen and (max-width:1460px){
+    /* .wrap-logo-cateSearch{display: none}
+    #logo-2{display: block} */
+    .logo-categories {width: 140px;}
+    .logo-categories-text {margin-left: 8px;}
+    .icon-down-2 {margin-left: 5px;}
+    .logo-search {margin-left: 0px;}
+    .logo-cateSearch {width: 437px;}
+    .input-search {width: 215px;}
+    #logo-2{display: none;};
+}
+@media only screen and (max-width:1440px){
+    #logo-2 {
+        display: none;
+    }
+}
+@media only screen and (max-width:1400px){
+    .wrap-logo-cateSearch{display: none;}
+    .wrap-logo-cateSearch-2{display: block;width: 72%;}
+    .logo-menu{width: 770px;}
+    .logo-menu li{width: 115px;}
+    .logo-cateSearch{width: 99%;margin-left: 10px;}
+    .logo-categories{width: 21%;}
+    .logo-categories li{width: 215px;}
+    .logo-search {/* margin-left: 0px; */width: 79%;}
+    .input-search{width: 87%;margin-bottom: 18px;margin-left: 28px;}
+    .logo-categories-text {margin-left: 25px;}
+    .icon-down-2 {margin-left: 15px;}
+    .icon-search{width: 8%;}
+    #logo-2 {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    /* .content{margin: 0 25px 0 25px;} */
     .contact-email{padding-right: 30px}
     .contact-phone{padding-left: 30px}
-    .navtop-language{width: 140px;padding: 0px 0 0 20px;}
-    
+    .input-search {
+        width: 87%;
+    }
 }
+
+@media only screen and (max-width:1024px){
+    /* .content{margin: 0 25px 0 25px;} */
+    .contact-email{padding-right: 30px}
+    .contact-phone{padding-left: 30px}
+    .input-search {
+        width: 87%;
+    }
+}
+
 /*-------------------------  END HEADER  -------------------------*/
 
 /*-------------------------  BANNER  -------------------------*/
