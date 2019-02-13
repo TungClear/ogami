@@ -17,11 +17,11 @@
      display: flex;
      width: 100%;
      justify-content: space-between;
-    /* border-bottom: 1px solid;
+     /* border-bottom: 1px solid;
      */
      flex-wrap: wrap;
      top: 0;
-     height: 70px;
+     height: auto;
 }
  .navtop-left{
      margin: 23px 0 13px 0;
@@ -103,6 +103,15 @@
  .navtop-language-icon-nation{
      margin-right: 9px;
 }
+.wrap-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border-bottom: 1px solid; */
+    flex-wrap: wrap;
+    top: 0;
+    height: auto;
+}
  .sub-menu-3{
     /* display: none;
      position: absolute;
@@ -166,6 +175,11 @@
  .logo-logo{
      width: 8%;
      margin-top: 20px;
+}
+.logo-logo-2{
+    width: 8%;
+    margin-top: 20px;
+    display: none;
 }
  .logo-cateSearch{
      display: flex;
@@ -309,8 +323,8 @@
      position: relative;
      display: inline-block;
      width: 115px;
-     background: white;
-    /* margin-right: 12px;
+     /* background: white; */
+     /* margin-right: 12px;
      */
      height: 45px;
      line-height: 45px;
@@ -364,6 +378,12 @@
  .logo-icon-cart{
      position: relative;
      margin-right: 20px;
+}
+
+.logo-icon-2{
+    display: none;
+   width: 28%;
+   padding-top: 12px;
 }
  .float-icon{
      position: absolute;
@@ -432,6 +452,8 @@
      */
      height: 680px;
      background-color: #fff2d0;
+     background-image: url("../images/slide-1.jpg");
+     background-size: 100% 100%;
     /* position: relative;
      */
 }
@@ -480,7 +502,7 @@
      padding: 15px 0 0 0;
 }
  .logo-department{
-     width: 28%;
+     width: 25%;
      background-color: #88c74a;
 }
  .wrap-logo-cateSearch-2{
@@ -581,15 +603,18 @@
      .banner-content{
          margin: 3% 0 0 18%;
     }
-     #productContent{
+     /* #productContent{
          margin-left: 61px;
+    } */
+    .product-product{
+        justify-content: center;
     }
-     #bestSellerProductsContent{
+     /* #bestSellerProductsContent{
          margin-left: 61px;
-    }
-     #featuredProductsContent{
+    } */
+     /* #featuredProductsContent{
          margin-left: 61px;
-    }
+    } */
      .product-product-item {
     }
      .product-product-item-caption-hover{
@@ -611,7 +636,7 @@
     }
      .wrap-logo-cateSearch-2{
         display: block;
-        width: 72%;
+        width: 75%;
     }
      .logo-menu{
         width: 770px;
@@ -664,7 +689,7 @@
          margin-left: 0;
     }
      .product-product-item {
-         flex-basis: 290px;
+         flex-basis: 295px;
     }
      .product-product-item-image img {
          width: 290px;
@@ -691,7 +716,9 @@
          width: 31% !important;
     }
 }
- @media only screen and (max-width:1200px){
+
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media only screen and (max-width:1199.98px){
     /* .content{
         margin: 0 25px 0 25px;
     }
@@ -713,6 +740,12 @@
     }
      .product-product-item-caption-hover{
     }
+    .footer-from-email-form-btn{
+        width: 29% !important;
+   }
+   .dealOfTheWeek-price-content{
+    margin-top: 30% !important;
+   }
 }
  @media only screen and (max-width:1024px){
     /* .content{
@@ -733,6 +766,9 @@
      #productContent{
          margin-left: 27px;
     }
+    .product-product-item-image{
+        height: 69% !important;
+    }
      #bestSellerProductsContent{
         margin-left: 27px;
     }
@@ -743,6 +779,7 @@
     }
      .product-product-item-caption-hover{
     }
+    
      .banner2-item-content{
          padding: 13% 1% 1% 4% !important;
     }
@@ -763,8 +800,13 @@
      .footer-from-email-form-input{
          width: 57% !important;
     }
+    .dealOfTheWeek-price-content{
+        margin-top: 40% !important;
+    }
 }
- @media only screen and (max-width: 992px) {
+
+/* Large devices (desktops, 992px and up) */
+ @media only screen and (max-width: 991.98px) {
      #productContent{
          margin-left: 5px;
     }
@@ -780,7 +822,7 @@
     }
      .product-product-item-caption-hover{
     }
-    /* .bestSeller-title-name{
+    /* .bestSeller-title-name{ 
          font-size: 38px !important;
     }
      .product-title{
@@ -799,19 +841,9 @@
          padding-right: 20px !important;
     }
 }
- @media only screen and (min-width:1440px){
-     #productContent{
-        /* margin-left: 61px;
-         */
-    }
-     .product-product-item {
-         flex-basis: 300px;
-    }
-     .product-product-item-image img {
-         width: 300px;
-    }
-}
- @media only screen and (max-width:768px){
+
+/* Medium devices (tablets, 768px and up) */
+ @media only screen and (max-width:767.98px){
      .contact-email{
          padding-right: 10px;
     }
@@ -834,16 +866,171 @@
         width: 89px;
     }
     .logo-logo{width: 14%;}
+    .logo-logo-2{
+        width: 14%;
+   }
     .logo-department{display: none;}
     .logo-cateSearch{margin-left: 0}
+    .logo-icon-2{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo-icon{
+        display: none;
+    }
+    .logo-categories {
+        width: 31%;
+    }
+    .logo-search {
+        width: 69%;
+    }
+    /* .input-search {
+        width: 70%;
+    } */
+    .form-search-input{
+        width: 70%;
+    }
+    .logo-categories-text {
+        margin-left: 10px;
+    }
+    .icon-down-2 {
+        margin-left: 4px;
+    }
+    .logo-logo img{
+    width: 70px;
+    height: 36px;
+    }
+    .slide-caption {
+        margin: 170px 0 20px 40px;
+    }
+    .product-product {
+        justify-content: center;
+    }
+    .banner-content {
+        margin: 20% 0 0 9% !important;
+    }
+    .bestSeller-title-name {
+        font-size: 33px !important;
+    }
+    .product-menubar a {
+        padding-left: 5px;
+    }
+    .product-menubar a {
+        font-size: 20px !important;
+    }
+    .saleProducts-title-name {
+        font-size: 33px !important;
+    }
+    .banner2-item-content {
+        font-size: 24px !important;
+    }
+    .banner2-caption-button {
+        width: 120px;
+        height: 42px;
+        font-size: 13px;
+    }
+    .footer-from-email-form-input{
+        margin-left: 0 !important;
+        width: 64% !important;
+    }
+    .footer-from-email-form-btn {
+        width: 36% !important;
+    }
+    .dealOfTheWeek-price-content {
+        margin-top: 70% !important;
+        margin-left: 40% !important;
+    }
+    .footer-from{
+        display: none;
+    }
+    .footer-newsletter{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
- @media only screen and (max-width:544px){
+
+@media only screen and (max-width:665px){
+    .navtop-right {
+        margin: 0;
+    }
+    /* #nav-top {
+        justify-content: center;
+    } */
+    .navtop-left {
+        margin: 20px 0 6px 0;
+    }
+    #logo {
+        padding: 29px 0 20px 0;
+    }
+    .wrap-nav{
+        justify-content: flex-end;
+    }
+}
+
+ @media only screen and (max-width:575.98px){
+    .logo-logo-2{
+        display: block;
+        width: 20%;
+    }
+    .wrap-nav{
+    width: 80%;
+    }
+    .logo-logo{
+        display: none;
+    }
+    .banner-content {
+        font-size: 26px !important;}
+        .product-title {
+            font-size: 33px !important;
+        }
+        .product-menubar a {
+            font-size: 18px !important;
+        }
+        .product-menubar a {
+            padding-left: 0px;
+        }
+        .bestSeller-title-name {
+            width: 23%;
+            font-size: 28px !important;
+        }
+        .product-menubar a {
+            font-size: 18px !important;
+        }
+        .product-menubar a {
+            padding: 17px 5px 0 5px;
+        }
+        .saleProducts-title-name {
+            font-size: 29px !important;
+        }
+        .dealOfTheWeek-content-title{
+            line-height: 40px !important;
+        }
+        .dealOfTheWeek-content-time-item{
+            margin-bottom: 10px;
+        }
+        .slide-caption-button{
+            margin-top: 0;
+        }
+}
+
+@media only screen and (min-width:1440px){
+    #productContent{
+       /* margin-left: 61px;
+        */
+   }
+    .product-product-item {
+        flex-basis: 313px;
+   }
+    .product-product-item-image img {
+        width: 308px;
+   }
 }
 /*------------------------- END HEADER -------------------------*/
 /*------------------------- BANNER -------------------------*/
  #banner{
-     margin: 20px 0 40px 0;
-    /* border: 1px solid;
+     margin: 40px 0 40px 0;
+     /* border: 1px solid;
      */
      display: flex;
      justify-content: space-between;
@@ -856,15 +1043,19 @@
      */
     /* margin-right: 20px;
      */
+     background-size: 100% 100%;
 }
  .banner-item:nth-of-type(1){
-     background-color: #e0ffd9;
+     /* background-color: #e0ffd9; */
+     background-image: url("../images/banner-1.jpg");
 }
  .banner-item:nth-of-type(2){
-     background-color: #ffdedc;
+     /* background-color: #ffdedc; */
+     background-image: url("../images/banner-2.jpg")
 }
  .banner-item:nth-of-type(3){
-     background-color: #def1ff;
+     /* background-color: #def1ff; */
+     background-image: url("../images/banner-3.jpg")
 }
  .banner-content{
     /* position: absolute;
@@ -932,17 +1123,16 @@
      flex-wrap: wrap;
 }
  .product-product-item{
-     width: 300px;
+     width: 313px;
      height: 300px;
-    /* border: 1px solid;
+     /* border: 1px solid;
      */
-    /* flex-basis: 300px;
-     */
+     /* flex-basis: 313px; */
      margin-bottom: 3px;
 }
  .product-product-item-image{
-     height: 76%;
-    /* border: 1px solid;
+     height: 72%;
+     /* border: 1px solid;
      */
 }
  .product-product-item-image img{
@@ -1009,13 +1199,13 @@
      position: absolute;
      width: 300px;
      height: 89px;
-    /* border: 1px solid;
+     /* border: 1px solid;
      */
      z-index: 1;
      justify-content: center;
      padding-top: 24px;
      font-size: 27px;
-     background-color: white;
+     background-color: rgb(255, 255, 255,0.3);
 }
  .product-product-item-caption:hover .product-product-item-caption-hover{
     /* display: block;
@@ -1046,9 +1236,9 @@
 /*------------------------- END PRODUCT -------------------------*/
 /*------------------------- BENEFIT -------------------------*/
  #benefit{
-     height: 150px;
+     height: auto;
      border: 1px solid #ebebeb;
-     margin-bottom: 20px;
+     margin-bottom: 40px;
      display: flex;
 }
  .benefit-item{
@@ -1058,6 +1248,7 @@
 }
  .benefit-item-content{
      margin-top: 30px;
+     margin-bottom: 25px;
 }
  .benefit-item-content-icon{
      width: 42px;
@@ -1083,19 +1274,86 @@
      margin-top: 25px;
 }
 /*------------------------- END BENEFIT -------------------------*/
-/*------------------------- DEAL OF WEEK -------------------------*/
+/*------------------------- DEAL OF THE WEEK -------------------------*/
  #dealOfTheWeek{
      height: 510px;
      background-color: #ebfee9;
-     border: 1px solid;
+     /* border: 1px solid; */
      margin-bottom: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     background-image: url("../images/deal-week.png");
+     background-size: 100% 100%;
 }
  .dealOfTheWeek-content{
      text-align: center;
-     text-transform: capitalize;
-     font-size: 30px;
+     width: 60%;
+     margin: auto;
 }
-/*------------------------- END DEAL OF WEEK -------------------------*/
+.dealOfTheWeek-content-title{
+    font-size: 44px;
+    line-height: 30px;
+    color: #252525;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.dealOfTheWeek-content-description{
+    font-size: 16px;
+    line-height: 26px;
+    color: #636363;
+    margin-bottom: 45px;
+}
+.dealOfTheWeek-content-time{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.dealOfTheWeek-content-time-item{
+    width: 60px;
+    height: 72px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+.dealOfTheWeek-content-time-item-number{
+    font-size: 30px;
+    line-height: 18px;
+    color: #88c74a;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+.dealOfTheWeek-content-time-item-name{}
+.dealOfTheWeek-content-button{}
+.dealOfTheWeek-price{
+    width: 40%;
+    align-content: center;
+}
+.dealOfTheWeek-price-content{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    box-shadow: 0px 5px 13px rgba(53,78,84,0.21);
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 34px;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+.dealOfTheWeek-price-number{
+    font-size: 24px;
+    line-height: 20px;
+    color: #88c74a;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dealOfTheWeek-price-name{
+}
+/*------------------------- END DEAL OF THE WEEK -------------------------*/
 /*------------------------- BEST SELLER -------------------------*/
  #bestSeller{
      height: auto;
@@ -1111,7 +1369,7 @@
      font-size: 44px;
      color: #252525;
      font-weight: bold;
-     text-align: center;
+     text-align: left;
 }
  .bestSeller-content{
      margin: -51px 0 0 0;
@@ -1145,10 +1403,14 @@
      display: flex;
 }
  .banner2-item:nth-of-type(1){
-     background-color: #fbf9c9;
+     /* background-color: #fbf9c9; */
+    background-image: url("../images/banner-4.jpg");
+    background-size: 100% 100%;
 }
  .banner2-item:nth-of-type(2){
-     background-color: #ffd7ed;
+     /* background-color: #ffd7ed; */
+     background-image: url("../images/banner-5.jpg");
+     background-size: 100% 100%;
 }
  .banner2-item-image{
      width: 38%;
@@ -1204,6 +1466,7 @@
     margin-bottom: 15px;
     padding-right: 75px;
     margin-right: 40px;
+    background-color: #fbf9c9;
 }
  .saleProducts-item-image{
     width: 45%;
@@ -1271,7 +1534,7 @@
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     margin-bottom: 65px;
+     margin-bottom: 10px;
 }
  .footer-about{
      margin-bottom: 30px;
@@ -1391,5 +1654,19 @@
      */
 }
  .footer-bottom-right-logo{
+}
+
+.footer-newsletter{
+    display: none;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+.footer-newsletter-left{
+    width: 40%;
+}
+.footer-newsletter-right{
+    width: 50%;
 }
 /*------------------------- END FOOTER -------------------------*/
